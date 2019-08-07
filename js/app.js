@@ -19,6 +19,7 @@ while (go === false){
     console.log(confirm);
 }
 
+var userAnswers = []
 
 //Here is the first question sequence
 var chocolate = prompt('Do I hate chocolate?');
@@ -27,10 +28,13 @@ console.log('User input is ' + chocolate);
 chocolate = chocolate.toLowerCase();
 console.log('In lowercase it is ' +chocolate);
 
-chocolate = chocolate.startsWith('n');
+chocolate = chocolate.startsWith('y');
 console.log('Starts with n ' + chocolate);
 
-if(chocolate === true) {
+userAnswers.push(chocolate);
+console.log (userAnswers);
+
+if(chocolate === false) {
     alert("That's right! I looooooove chocolate! You're so good at this game!");
 }
 else {
@@ -46,6 +50,9 @@ console.log('In lowercase this is ' + dancer);
 
 dancer = dancer.startsWith('y');
 console.log('Starts with y ' + dancer);
+
+userAnswers.push(dancer);
+console.log(userAnswers);
 
 if(dancer === true){
     alert("Yup! I was in an Irish dance company for 10 years. Wow, how'd you know that?");
@@ -64,6 +71,9 @@ console.log('In lowercase is ' + crier);
 crier = crier.startsWith('y');
 console.log('Starts with y ' + crier);
 
+userAnswers.push(crier);
+console.log(crier);
+
 if(crier === true) {
     alert('Yeah, you got me. Sorry not sorry');
 }
@@ -81,6 +91,9 @@ console.log('In lowercase is ' + singer);
 singer = singer.startsWith('y');
 console.log('Starts with y ' + singer);
 
+userAnswers.push(singer)
+console.log(userAnswers)
+
 if(singer === false) {
     alert("You're right! I love to sing!. I would say you should ask me to sing but please don't. That's embarassing.");
 }
@@ -97,6 +110,9 @@ console.log('In lowercase is ' + dragons);
 
 dragons = dragons.startsWith('y');
 console.log('Starts with y ' + dragons);
+
+userAnswers.push(dragons)
+console.log(userAnswers)
 
 if(dragons === true){
     alert("You win!!! You're amazing at this game! But wait... how do you know so much about me?");
