@@ -1,20 +1,42 @@
 body {
     background-color: rgb(19, 6, 6);
-    color: ivory;
+    color: yellowgreen;
     font-family: monospace;
 }
 
 #title {
     font-size: 3em;
-    text-align: center
+    text-align: center;
+    line-height: 3em;
 }
 
 h2{
-    font-size: 1.5em;
-    text-align: center
+    font-size: 2em;
+    text-align: center;
+    line-height: 2em;
+    
 }
 
 h3 {
-    font-size:  1em;
-    text-align: center
+    font-size:  1.5em;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+h4 {
+    font-size: 1em;
+    line-height: 1em;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+
+}
+
+a {
+    display: block;
+    float: left;
+    
+}
+
+footer{
+    line-height: 3em;
 }
