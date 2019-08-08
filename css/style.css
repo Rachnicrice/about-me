@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    border: limegreen;
+    border-style: solid
 }
 body {
     background-color: rgb(19, 6, 6);
@@ -8,12 +10,14 @@ body {
 }
 
 #title {
+    display: block;
     font-size: 3em;
     text-align: center;
     line-height: 3em;
 }
 
 h2{
+    display: block;
     font-size: 2em;
     text-align: center;
     line-height: 2em;
@@ -21,12 +25,14 @@ h2{
 }
 
 h3 {
+    display: block;
     font-size:  1.5em;
     text-align: center;
     line-height: 1.5em;
 }
 
 h4 {
+    display:block;
     font-size: 1em;
     line-height: 1em;
     margin: 4px 2px 2px 2px;
@@ -36,5 +42,6 @@ h4 {
 }
 
 footer{
+    display: block;
     line-height: 3em;
 }
