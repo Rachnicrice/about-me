@@ -1,8 +1,8 @@
 'use strict';
 
 //Decalring variable to store answer's boolean values
-var userAnswers = []
-var correctAnswers = 0
+var userAnswers = [];
+var correctAnswers = 0;
 
 var name = prompt('What is your name?');
 
@@ -94,8 +94,8 @@ function likesSinging() {
   console.log('In lowercase is ' + singer);
   singer = singer.startsWith('n');
   console.log('Starts with n ' + singer);
-  userAnswers.push(singer)
-  console.log(userAnswers)
+  userAnswers.push(singer);
+  console.log(userAnswers);
   
   if(singer === true) {
     alert('You\'re right! I love to sing! I would say you should ask me to sing but please don\'t. That\'s embarassing.');
@@ -115,8 +115,8 @@ function likesDragons() {
   console.log('In lowercase is ' + dragons);
   dragons = dragons.startsWith('y');
   console.log('Starts with y ' + dragons);
-  userAnswers.push(dragons)
-  console.log(userAnswers)
+  userAnswers.push(dragons);
+  console.log(userAnswers);
   
   if(dragons === true){
     alert('You\'re right!!! You\'re amazing at this game! But wait... how do you know so much about me?');
@@ -142,34 +142,34 @@ function countriesNumber () {
     }
     else {
       switch (howManyCountries) {
-        case 1:
+      case 1:
         alert('Too low Joe!');
         break;
-        case 2: 
+      case 2: 
         alert('Omg do you live underground? Because you\'re way too low');
         break;
-        case 3:
+      case 3:
         alert('You\'re getting warm. Guess higher?');
         break;
-        case 4:
+      case 4:
         alert('Close but no dice. Try a little higher next time');
         break;
-        case 5:
+      case 5:
         alert('Just a biiiit higher');
         break;
-        case 7:
+      case 7:
         alert('You just missed the mark. Try a little lower');
         break;
-        case 8:
+      case 8:
         alert ('Your guess is too high, try guessing lower');
         break;
-        case 9:
+      case 9:
         alert('I have a fear of heights. Please go lower');
         break;
-        case 10:
+      case 10:
         alert('Are you a bird? Are you a plane? Are you SUPERMAN? Because your guess is way too high');
         break;
-        default:
+      default:
         alert('You\'re way off! I\'ll give you a hint... it\'s somewhere between 1 and 10');
         
       }
