@@ -53,14 +53,17 @@ h4 {
 
 }
 
-ul>li{
-    list-style: georgian outside none;
+ol {
+  list-style-type: decimal;
+  display: block;
+  margin: 2em;
+  padding: 2em;
 }
 
 li {
     border: limegreen;
     border-style: solid;
-    display:inline-block;
+    display: block;
     font-size: 1.25em;
     line-height: 1.25em;
   
@@ -80,4 +83,30 @@ footer{
     border-style: solid;
     display: block;
     line-height: 3em;
+}
+
+nav {
+   margin: .5em 17% .5em 12%;
+}
+
+nav a {
+  color: limegreen;
+  display: inline-block;
+  border: limegreen;
+  border-style: solid;
+  line-height: 2em;
+  margin: .5em .5em .5em .5em;
+  padding: 0em;
+  width: 10em;
+  float: right;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
 }
