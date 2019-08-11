@@ -1,23 +1,31 @@
 * {
     box-sizing: border-box;
-    border: limegreen;
-    border-style: solid
 }
 body {
     background-color: rgb(19, 6, 6);
+    border: limegreen;
+    border-style: solid;
     color: yellowgreen;
+    display: block;
     font-family: monospace;
 }
 
 #title {
+    border: limegreen;
+    border-style: solid;
     display: block;
-    font-size: 3em;
+    font-size: 2.5em;
+    margin: .5em;
+    padding: 1em;
     text-align: center;
-    line-height: 3em;
+    line-height: 2.5em;
 }
 
 h2{
+    border: limegreen;
+    border-style: solid;
     display: block;
+    margin: 0em .5em .5em .5em;
     font-size: 2em;
     text-align: center;
     line-height: 2em;
@@ -26,22 +34,50 @@ h2{
 
 h3 {
     display: block;
-    font-size:  1.5em;
+    border: limegreen;
+    border-style: solid;
+    font-size:  1.75em;
     text-align: center;
-    line-height: 1.5em;
+    line-height: 1.75em;
 }
 
 h4 {
     display:block;
-    font-size: 1em;
-    line-height: 1em;
+    border: limegreen;
+    border-style: solid;
+    font-size: 1.5em;
+    line-height: 1.5em;
     margin: 4px 2px 2px 2px;
     padding-top: 1em;
     padding-bottom: 0.5em;
 
 }
 
+ul>li{
+    list-style: georgian outside none;
+}
+
+li {
+    border: limegreen;
+    border-style: solid;
+    display:inline-block;
+    font-size: 1.25em;
+    line-height: 1.25em;
+  
+}
+
+p{
+    border: limegreen;
+    border-style: solid;
+    display:inline-block;
+    font-size: 1.15em;
+    margin: .5em;
+    padding: .5em;
+}
+
 footer{
+    border: limegreen;
+    border-style: solid;
     display: block;
     line-height: 3em;
 }
