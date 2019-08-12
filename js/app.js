@@ -183,18 +183,21 @@ var isCountriesTrue = false;
 console.log(isCountriesTrue);
 
 function whereVisited () {
-  for (var i = 0; i < countriesVisited.length; i++) {
+  while (isCountriesTrue === false && countriesVisited.length <= 6) {
+
     var whatCountries = prompt('Okay, now, can you guess the name of one of the countries I\'ve visited?');
-    
     whatCountries = whatCountries.toLowerCase();
     console.log (whatCountries);
-    
-    if (whatCountries === countriesVisited[0] || whatCountries === countriesVisited[1] || whatCountries === countriesVisited[2] || whatCountries === countriesVisited[3] || whatCountries === countriesVisited[4] || whatCountries === countriesVisited[5]){
-      alert('Correct-o-mundo! I\'ve been to Luxembourg, Italy, France, Germany, Austria, and Switzerland!')
-      isCountriesTrue = true;
-      break;
+
+    for (var i = 0; i < countriesVisited.length; i++) {
+      if (whatCountries === countriesVisited[i]) {
+        isCountriesTrue = true;
+        break; 
+      } 
     }
-    else {
+    if(isCountriesTrue === true){
+      alert('Correct-o-mundo! I\'ve been to Luxembourg, Italy, France, Germany, Austria, and Switzerland!');
+    } else {
       alert('No, I can\'t say I\'ve ever been there before!');
     }
   }
@@ -209,14 +212,14 @@ function checkAnswers(){
       correctAnswers = correctAnswers + 1;
     }
   }
-  if (correctAnswers > 6){
+  if (correctAnswers >= 6){
     alert ('Congragulations ' + name + '! You got ' + correctAnswers + ' out of 7 questions right!!');
   } 
   else if (correctAnswers < 6 && correctAnswers > 4) {
     alert('You did it ' + name + '! You finished the quiz! Your final score is...' + correctAnswers + ' out of 7! Not bad, but there\'s still room for improvement');
   } 
   else {
-    alert ('You got ' + correctAnswers + ' out of 7 correct! Well, not your best run ' + name + 'but at least you finished. A for effort!');
+    alert ('You got ' + correctAnswers + ' out of 7 correct! Well, not your best run ' + name + ' but at least you finished. A for effort!');
   }
 }
 

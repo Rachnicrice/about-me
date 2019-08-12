@@ -3,110 +3,144 @@
 }
 body {
     background-color: rgb(19, 6, 6);
-    border: limegreen;
-    border-style: solid;
     color: yellowgreen;
     display: block;
     font-family: monospace;
+    margin: 30px;
+    padding: 10px;
 }
 
 #title {
-    border: limegreen;
+    border: yellowgreen;
     border-style: solid;
     display: block;
     font-size: 2.5em;
+    line-height: 2.5em;
     margin: .5em;
     padding: 1em;
     text-align: center;
-    line-height: 2.5em;
+}
+
+#know{
+    margin: 30px 5px 5px 0px
 }
 
 h2{
-    border: limegreen;
+    border: yellowgreen;
     border-style: solid;
     display: block;
+    line-height: 2em;
     margin: 0em .5em .5em .5em;
     font-size: 2em;
     text-align: center;
-    line-height: 2em;
     
 }
 
 h3 {
     display: block;
-    border: limegreen;
-    border-style: solid;
     font-size:  1.75em;
-    text-align: center;
     line-height: 1.75em;
+    text-align: center;
 }
 
 h4 {
-    display:block;
-    border: limegreen;
-    border-style: solid;
+    display: block;
     font-size: 1.5em;
     line-height: 1.5em;
-    margin: 4px 2px 2px 2px;
-    padding-top: 1em;
+    margin: 10px 2px 2px 2px;
     padding-bottom: 0.5em;
+    padding-top: 1em;
 
 }
 
 ol {
-  list-style-type: decimal;
-  display: block;
-  margin: 2em;
-  padding: 2em;
+    display: block;
+    list-style-type: decimal;
+    margin: 0px 5px 20px 5px;
+    padding: 2em;
 }
 
 li {
-    border: limegreen;
-    border-style: solid;
     display: block;
     font-size: 1.25em;
     line-height: 1.25em;
-  
 }
 
 p{
-    border: limegreen;
-    border-style: solid;
     display:inline-block;
-    font-size: 1.15em;
+    font-size: 1.25em;
     margin: .5em;
     padding: .5em;
 }
 
 footer{
-    border: limegreen;
+    border: yellowgreen;
     border-style: solid;
     display: block;
     line-height: 3em;
 }
 
 nav {
-   margin: .5em 17% .5em 12%;
+    margin: .5em 18% .5em 12%;
 }
 
 nav a {
-  color: limegreen;
-  display: inline-block;
-  border: limegreen;
-  border-style: solid;
-  line-height: 2em;
-  margin: .5em .5em .5em .5em;
-  padding: 0em;
-  width: 10em;
-  float: right;
-  font-size: 1.25em;
-  text-align: center;
+    border: yellowgreen;
+    border-style: solid;
+    color: yellowgreen;
+    display: block;
+    float: right;
+    font-size: 1.25em;
+    line-height: 2em;
+    margin: .5em .5em .5em .5em;
+    padding: 0em;
+    text-align: center;
+    width: 10em;
 }
 
+article{
+    margin: 10px 5px 0px 0px;
+}
+
+#img1{
+    float: right;
+    max-height: 100%;
+    max-width: auto;
+    position: absolute;
+    top: 400px;
+    right: 200px;
+}
+#img2{
+    float: right;
+    max-height: 100%;
+    max-width: auto;
+    position: absolute;
+    top: 225px;
+    left: 200px;
+}
+#img3{
+    float: right;
+    max-height: 100%;
+    max-width: auto;
+    position: absolute;
+    top: 600px;
+    left: 250px;
+}
+article.photo{
+    filter: grayscale(100%);
+    float: right;
+    height: 350px;
+    position: absolute;
+    right: 300px;
+    top: 300px;
+    width: 350px;
+}
+
+/* .clearfix sourced from Chris Coyier, css-tricks.com, https://css-tricks.com/all-about-floats/*/
 .clearfix:after { 
-   content: "."; 
-   visibility: hidden; 
-   display: block; 
-   height: 0; 
-   clear: both;
+    clear: both;
+    content: "."; 
+    display: block; 
+    height: 0; 
+    visibility: hidden; 
 }
